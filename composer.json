@@ -1,0 +1,8 @@
+{
+    "require": {
+        "a7/autoload": "^2.1",
+        "nesbot/carbon": "^2.41",
+        "php-http/curl-client": "^2.2",
+        "guzzlehttp/psr7": "^1.8"
+    }
+}
