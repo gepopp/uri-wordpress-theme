@@ -8,3 +8,19 @@
 
 [x-cloak] { display: none !important; }
 
+#desktop-menu{
+  @apply hidden md:flex items-center space-x-3 text-logo-dark py-2;
+
+  li{
+    @apply hover:underline;
+  }
+
+}
+
+#mobile-menu{
+  @apply flex flex-col items-center text-logo-dark;
+
+  li{
+    @apply block w-full text-center py-3 border-b border-logo-dark pb-3;
+  }
+}

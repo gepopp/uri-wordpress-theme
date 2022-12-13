@@ -8,12 +8,12 @@
 				<script>
                     const image = "<?php echo get_stylesheet_directory_uri() ?>/assets/images/map-marker.png";
                     let map;
-                    const myLatLng = {lat: 48.2082016, lng: 16.3526775};
+                    const myLatLng = {lat: <?php the_field('field_6398b7ec11256', 'option'); ?>, lng: <?php the_field('field_6398b80511257', 'option'); ?>};
 
                     function initMap() {
                         map = new google.maps.Map(document.getElementById("map"), {
                             center: myLatLng,
-                            zoom: 14,
+                            zoom: <?php the_field('field_6398b81f11258', 'option'); ?>,
                         });
                         new google.maps.Marker({
                             position: myLatLng,
@@ -24,9 +24,9 @@
 				</script>
 			</div>
 			<div>
-				<h1 class="text-3xl lg:text-5xl font-serif text-logo-dark font-medium">Machen Sie den ersten Schritt,</h1>
-				<h1 class="text-3xl lg:text-5xl font-serif text-logo-medium font-medium">Kontakt</h1>
-				<p>Termine sind immer Dienstags von 8:00-19:00 Uhr möglich.</p>
+				<h1 class="text-3xl lg:text-5xl font-serif text-logo-dark font-medium"><?php the_field('field_6398b77c11251', 'option'); ?></h1>
+				<h1 class="text-3xl lg:text-5xl font-serif text-logo-medium font-medium"><?php the_field('field_6398b79211252', 'option'); ?></h1>
+				<div><?php the_field('field_6398b79a11253', 'option'); ?></div>
 				<div class="flex flex-col bg-logo-light bg-opacity-5 p-5 text-white">
 					<div class="flex text-logo-dark space-x-5 py-3 border-b border-white">
 						<div>
@@ -35,7 +35,7 @@
 							</svg>
 						</div>
 						<div>
-							<a href="tel:+43670/2085532" class="text-lg">+43670/2085532</a>
+							<a href="tel:<?php the_field('field_6398b7ac11254', 'option'); ?>" class="text-lg"><?php the_field('field_6398b7ac11254', 'option'); ?></a>
 						</div>
 					</div>
 					<div class="flex text-logo-dark space-x-5 py-3">
@@ -45,7 +45,7 @@
 							</svg>
 						</div>
 						<div>
-							<a href="mailto:christina.kuri@psychotherapie-kuri.at" class="text-lg">christina.kuri@psychotherapie-kuri.at</a>
+							<a href="mailto:<?php the_field('field_6398b8862e0d3', 'option'); ?>" class="text-lg"><?php the_field('field_6398b8862e0d3', 'option'); ?></a>
 						</div>
 					</div>
 					<div class="flex text-logo-dark space-x-5 py-3">
@@ -56,11 +56,7 @@
 							</svg>
 						</div>
 						<div>
-							<address class="text-logo-dark">
-								Praxis</br>
-                                Auerspergstraße 7/24</br>
-                                1080 wien
-                            </address>
+							<address class="text-logo-dark whitespace-pre"><?php the_field('field_6398b7c811255', 'option'); ?></address>
 						</div>
 					</div>
 				</div>

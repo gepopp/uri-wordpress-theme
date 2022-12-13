@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "0676\/2085532",
+            "default_value": "0670\/2085532",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -26,9 +26,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "options_page",
                 "operator": "==",
-                "value": "post"
+                "value": "acf-options-header"
             }
         ]
     ],
@@ -41,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1670947785
+    "modified": 1670949649
 }

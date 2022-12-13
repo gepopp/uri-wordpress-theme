@@ -7,10 +7,8 @@
                 data-aos-duration="300"
                 data-aos-delay="200"
                 data-aos-once="true"
-            > &rdquo;Bis du dem
-				<span class="text-logo-dark">Unbewussten bewusst wirst</span>, wird es dein Leben steuern und du wirst es Schicksal nennen.&ldquo;
-			</h3>
-			<p class="text-center mt-10">Carl Gustav Jung</p>
+            ><?php the_field('field_6398ae07eec7b', 'option'); ?></h3>
+			<p class="text-center mt-10"><?php the_field('field_6398ae23eec7c', 'option'); ?></p>
 		</div>
 	</div>
 </div>

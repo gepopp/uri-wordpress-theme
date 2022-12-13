@@ -27,13 +27,41 @@ class ACF {
 			] );
 
 			acf_add_options_sub_page( [
-				'page_title'  => 'Landingpage Footer Settings',
-				'menu_title'  => 'Footer',
+				'page_title'  => 'Landingpage Intro Sektion',
+				'menu_title'  => 'Intro',
+				'parent_slug' => 'theme-general-settings',
+			] );
+
+			acf_add_options_sub_page( [
+				'page_title'  => 'Landingpage Zitat Sektion',
+				'menu_title'  => 'Zitat',
+				'parent_slug' => 'theme-general-settings',
+			] );
+
+			acf_add_options_sub_page( [
+				'page_title'  => 'Landingpage Schwerpunkte Sektion',
+				'menu_title'  => 'Schwerpunkte',
+				'parent_slug' => 'theme-general-settings',
+			] );
+
+			acf_add_options_sub_page( [
+				'page_title'  => 'Landingpage Sektion Methode',
+				'menu_title'  => 'Methode',
+				'parent_slug' => 'theme-general-settings',
+			] );
+
+			acf_add_options_sub_page( [
+				'page_title'  => 'Landingpage Sektion Rahmenbedingungen',
+				'menu_title'  => 'Rahmenbedingungen',
+				'parent_slug' => 'theme-general-settings',
+			] );
+
+			acf_add_options_sub_page( [
+				'page_title'  => 'Landingpage Sektion Kontakt',
+				'menu_title'  => 'Kontakt',
 				'parent_slug' => 'theme-general-settings',
 			] );
 
 		}
 	}
-
-
 }
