@@ -5,7 +5,7 @@ namespace kuri_classes\Boot;
 class TemplateFilters {
 
 
-	public function __construct() {
+	public function __invoke() {
 
 
 		foreach ( $this->get_folders() as $folder ) {

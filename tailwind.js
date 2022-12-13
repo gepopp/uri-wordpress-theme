@@ -1,8 +1,13 @@
 module.exports = {
     content: [
-        './**/*.php',
-        './dist/**/*.js',
-        './**/*.vue'
+        'index.php',
+        'header.php',
+        'footer.php',
+        'archive.php',
+        'single.php',
+        'category.php',
+        'functions.php',
+        'templates/**/*.php'
     ],
     theme: {
         fontFamily: {
@@ -24,7 +29,6 @@ module.exports = {
     },
     plugins:
         [
-            require('tailwind-scrollbar'),
             require('@tailwindcss/line-clamp'),
         ]
 }

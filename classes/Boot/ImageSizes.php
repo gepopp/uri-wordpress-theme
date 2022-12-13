@@ -7,7 +7,7 @@ namespace kuri_classes\Boot;
 class ImageSizes {
 
 
-	public function __construct() {
+	public function __invoke() {
 
 		add_action('after_setup_theme', [$this, 'add_image_sizes'] );
 

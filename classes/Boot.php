@@ -20,7 +20,9 @@ class Boot {
 		foreach ( glob( get_template_directory() . '/classes/Boot/*') as $file ){
 
 			$classname = 'kuri_classes\Boot\\' . pathinfo($file, PATHINFO_FILENAME);
-			new $classname;
+			$boot =  new $classname();
+
+			$boot();
 
 		}
 
